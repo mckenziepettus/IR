@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html> 
- 
+ <head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>
  
     IR Homepage
 </title>
+ </head>
 <style>
   h1 {
     color : black;
@@ -33,15 +36,27 @@
     color:lightblue;
   }
   h2 {
+   dislay: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-color: black;
+  
+    
     height: 40px;
-    width: 1100px;
+    flex-wrap: wrap;
     margin: 0px 0 65px 180px;
     
   }
+ @media (max-width: 1200px) {
+  h2 {
+   width: 90%;
+   margin: 0 auto;
+  }
+  a {
+   font-size: 20px;
+   margin-right: 1em;
+  } 
+ }
  
 </style>
 <h1> 
@@ -53,25 +68,29 @@
   
 <body> 
   <style>
-  .body {
+  body {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+   align-items: stretch;
+   justify-content: center;
    
   }
   .container {
     display: flex;
-    align-items: center;
+    align-items: stretch;
+   justify-content: center;
+   text-align: center;
+   padding: 20px;
+   max-width: 1200px;
+   margin: 0 auto;
   }
-  .decorative-box {
-    width: 600px;
-    height: 600px;
+  .decorative-box .resized-image {
+    width: 100%;
+   max-width: 500px;
+    min-height: 600px;
     background-color:lightblue;
     margin: 65px 0 70px 190px;
     text-align: center;
-    font-size: 25px;
+    font-size: 2vw;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -79,15 +98,23 @@
     
   
   }
+   @media (max-width: 600px) {
+    container{
+     flex-direction: column;
+     align-items: center;
+    }
+    .decorativebox, .resized-image{
+     width: 80%;
+     margin-right: 0;
+    }
+   }
 
   
  
  
- .resized-image {
-  width: 500px;
-  height: 500px;
+ 
   
- }
+ 
   </style> 
    <div class="container">
    <div class="decorative-box">
