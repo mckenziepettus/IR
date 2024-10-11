@@ -1,10 +1,26 @@
-<!DOCtype HTML>
-<html>
-    <title>
-        Contact 
-    </title>
-    <style>
-        h1 {
+<!DOCTYPE html>
+<html lang="en"> 
+  <head>
+    <!--add this to github-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<title>
+ 
+    IR Homepage
+</title>
+</head>
+
+<!--stop here-->
+<style>
+  .wrapper {
+    width: 100%
+  }
+  .web-info {
+    width: 100%
+  }
+
+  h1 {
     color : black;
     font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
@@ -12,11 +28,10 @@
 
    
   }
-
   a {
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
-    color: white;
+    color: black;
     text-decoration: none;
     margin-right: 2em;
    
@@ -32,21 +47,126 @@
     color:lightblue;
   }
   h2 {
+    display: flex;
+    justify-content: center;
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    margin-left: auto; 
+    
+   
     height: 40px;
-    width: 1100px;
-    margin: 0px 0 65px 180px;
+    flex-wrap: wrap;
+    margin: 0px 0 100px 65px; }
+
+    @media (max-width: 1200px) {
+      h2 {
+        width: 90%;
+        margin: 0 auto;
+      }
+      a {
+        font-size: 24px;
+      }
+    }
+    @media (max-width: 600px) {
+      a {
+        font-size: 20px;
+        margin-right: 1em;
+      }
+    }
+
+    body {
+    padding: 0;
+    margin: 0;
+   
+  }
+  .container {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+   
+    text-align: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .decorative-box, .resized-image {
+    width: 50%;
+    max-width: 500px;
+    min-height: 600px;
+    margin-bottom: 20px;
+    
+    background-color: lightblue;
+    
+    text-align: center;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
     
   }
-    </style>
-    <h1>
-        Contact 
-        <hr width="75% size="2" color="black"> 
-    </h1>
-    <h2>
-        <a href="index.html">Homepage</a> <a href="portfolio.html"> Portfolio</a><a href="experience.html"> Experience</a>
-    </h2>
+
+  
+
+  @media (max-width: 600px) {
+    .container{
+      flex-direction: column;
+      align-items: center;
+    }
+    .decorative-box, .resized-image{
+      width: 80%;
+      margin-right: 0;
+    }
+  }
+    
+
+  
+ 
+ 
+ 
+
+ 
+    
+  </style>
+  
+  
+
+  
+  
+
+<body>
+
+<h1> 
+     
+  McKenzie Pettus 
+<hr width="75% size="2" color="black"> 
+</h1>
+<h2> <a href="portfolio.html">Portfolio</a> <a href="contact.html"> Contact</a><a href="experience.html"> Experience</a> </h2>
+  
+ 
+  
+  
+   <div class="container">
+   <div class="decorative-box">
+      <p style="font-size: 30px;color: white;">Welcome to my Website! I am an Information Communication Technology Major at Florida State University</p>
+     
+   </div>
+ 
+   <img src="headshot.JPG" class="resized-image" alt="Homepage" />
+  
+   
+</div>
+
+
+<hr width="75% size="2" color="black"> 
+
+
+
+
+</body> 
+
+
+
 </html>
